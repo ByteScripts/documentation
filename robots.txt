@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://github.com/ByteScripts/documentation
+
+# Sitemaps
+Sitemap: https://github.com/ByteScripts/documentation/sitemap.xml

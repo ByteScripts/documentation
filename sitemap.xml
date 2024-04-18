@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://github.com/ByteScripts/documentation</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/banking</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/banking/Functions/Client</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/banking/Functions/Server</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/banking/issues</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/guides</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/guides/git</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/guides/nodejs</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/guides/pnpm</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/guides/types</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://github.com/ByteScripts/documentation/guides/vscode</loc><lastmod>2024-04-18T13:38:56.723Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
