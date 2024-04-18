@@ -1,0 +1,44 @@
+import ResourceLinks from '@components/resource-links';
+import { Steps, Tabs, Tab } from 'nextra-theme-docs';
+import { Callout } from 'nextra/components';
+
+# Banking
+
+<ResourceLinks repo="https://github.com/ByteScripts/banking" />
+
+A banking system with metadatas, support for multiple accounts and more
+
+## Installation
+
+<Steps>
+### Install all resource dependencies
+- [oxmysql](https://overextended.dev/oxmysql)
+- [ox_lib](https://overextended.dev/ox_lib)
+- [ox_inventory](https://overextended.dev/ox_inventory)
+- [es_extended](https://github.com/esx-framework/esx_core)
+
+### Download a [release](https://github.com/overextended/ox_inventory/releases)
+
+### Install optional dependencies
+
+These resources aren't required but provide additional functionality.
+
+- [ox_target](https://overextended.dev/ox_target)
+
+### Resource start order
+
+It's important for your resources to start in a logical order to prevent errors from missing dependencies.
+
+```bash
+start oxmysql   # this should be one of the first resources
+start ox_lib
+start es_extended
+start ox_target
+start banking
+```
+
+</Steps>
+
+## ESX
+
+- You will need a [compatible version of ESX Legacy](https://github.com/esx-framework/esx_core) (1.6.0 or higher).

@@ -1,0 +1,6 @@
+label: Banking
+collapsible: true
+collapsed: true
+link:
+  type: generated-index
+  description: A banking system with metadatas, support for multiple accounts and more
