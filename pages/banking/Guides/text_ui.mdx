@@ -1,0 +1,13 @@
+import { Callout } from 'nextra/components';
+
+# Use Text UI
+
+<Callout type="warning">
+Enabling this feature will make all scripts from us use text ui and will DISABLE ox_target if you have enabled it
+</Callout>
+
+To use text ui with the banking script all you have to do is add the following to your `server.cfg`
+
+```cfg
+setr byte:ox_textui 1
+```

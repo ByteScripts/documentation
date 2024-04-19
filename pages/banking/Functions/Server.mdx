@@ -1,11 +1,136 @@
 # Server
 
-## Function #1
-
-Description
+The `cardObject` is a table with the following structure:
 
 ```lua
-exports["Banking"]:Test()
+local cardObject = {
+    identifier = "string",
+    iban = "string",
+    balance = "number",
+    transactions = "table",
+    pin = "number",
+    number = "number",
+    expires = "table",
+    cvv = "number",
+    name = "string",
+    main = "boolean"
+}
 ```
 
-- parameter1: `type`
+## openBankAccount
+
+Opens an bank account for the player.
+
+```lua
+exports.banking.openBankAccount(player, forceCreate)
+```
+
+- player: `xPlayer`
+- forceCreate?: `boolean`
+  - If true, it will create a new bank account even if the player already has one.
+  - Default: `false`
+
+## setPin
+
+Sets the pin for the player's bank account.
+
+```lua
+exports.banking.setPin(item, newPin)
+```
+
+- item: `cardObject`
+- newPin: `string`
+
+## setMainCard
+
+Sets the main card for the player's bank account.
+
+```lua
+exports.banking.setMainCard(player, item)
+```
+
+- player: `xPlayer`
+- item: `cardObject`
+
+## getMainCard
+
+Gets the main card for the player's bank account.
+
+```lua
+exports.banking.getMainCard(data)
+```
+
+- data: `xPlayer` or `playerSrc` or `identifier`
+
+## withdraw
+
+Withdraws money from the player's bank account.
+
+```lua
+exports.banking.withdraw(player, item, amount)
+```
+
+- player: `xPlayer`
+- item: `cardObject`
+- amount: `number`
+
+## deposit
+
+Deposits money into the player's bank account.
+
+```lua
+exports.banking.deposit(player, item, amount)
+```
+
+- player: `xPlayer`
+- item: `cardObject`
+- amount: `number`
+
+## addTransaction
+
+Adds a transaction to the player's bank account.
+
+```lua
+exports.banking.addTransaction(player, item, amount, transactionType)
+```
+
+- player: `xPlayer`
+- item: `cardObject`
+- amount: `number`
+- transactionType: `string`
+
+## closeAccount
+
+Closes the player's bank account.
+
+```lua
+exports.banking.closeAccount(player, item)
+```
+
+- player: `xPlayer`
+- item: `cardObject`
+
+## transfer
+
+Transfers money from one player's bank account to another.
+
+```lua
+exports.banking.transfer(player, item, iban, amount)
+```
+
+- player: `xPlayer`
+- item: `cardObject`
+- iban: `string`
+- amount: `number`
+
+## resendCard
+
+Resends the player's bank card.
+
+```lua
+exports.banking.resendCard(player, iban, identifier)
+```
+
+- player: `xPlayer`
+- iban: `string`
+- identifier: `string`
