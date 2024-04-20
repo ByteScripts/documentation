@@ -22,7 +22,7 @@ local cardObject = {
 Opens an bank account for the player.
 
 ```lua
-exports.banking.openBankAccount(player, forceCreate)
+exports.banking:openBankAccount(player, forceCreate)
 ```
 
 - player: `xPlayer`
@@ -35,7 +35,7 @@ exports.banking.openBankAccount(player, forceCreate)
 Sets the pin for the player's bank account.
 
 ```lua
-exports.banking.setPin(item, newPin)
+exports.banking:setPin(item, newPin)
 ```
 
 - item: `cardObject`
@@ -46,7 +46,7 @@ exports.banking.setPin(item, newPin)
 Sets the main card for the player's bank account.
 
 ```lua
-exports.banking.setMainCard(player, item)
+exports.banking:setMainCard(player, item)
 ```
 
 - player: `xPlayer`
@@ -57,17 +57,28 @@ exports.banking.setMainCard(player, item)
 Gets the main card for the player's bank account.
 
 ```lua
-exports.banking.getMainCard(data)
+exports.banking:getMainCard(data)
 ```
 
 - data: `xPlayer` or `playerSrc` or `identifier`
+
+## setMoney
+
+Sets the money for the player's bank account.
+
+```lua
+exports.banking:setMoney(iban, amount)
+```
+
+- iban: `string`
+- amount: `number`
 
 ## withdraw
 
 Withdraws money from the player's bank account.
 
 ```lua
-exports.banking.withdraw(player, item, amount)
+exports.banking:withdraw(player, item, amount)
 ```
 
 - player: `xPlayer`
@@ -79,7 +90,7 @@ exports.banking.withdraw(player, item, amount)
 Deposits money into the player's bank account.
 
 ```lua
-exports.banking.deposit(player, item, amount)
+exports.banking:deposit(player, item, amount)
 ```
 
 - player: `xPlayer`
@@ -91,7 +102,7 @@ exports.banking.deposit(player, item, amount)
 Adds a transaction to the player's bank account.
 
 ```lua
-exports.banking.addTransaction(player, item, amount, transactionType)
+exports.banking:addTransaction(player, item, amount, transactionType)
 ```
 
 - player: `xPlayer`
@@ -104,7 +115,7 @@ exports.banking.addTransaction(player, item, amount, transactionType)
 Closes the player's bank account.
 
 ```lua
-exports.banking.closeAccount(player, item)
+exports.banking:closeAccount(player, item)
 ```
 
 - player: `xPlayer`
@@ -115,7 +126,7 @@ exports.banking.closeAccount(player, item)
 Transfers money from one player's bank account to another.
 
 ```lua
-exports.banking.transfer(player, item, iban, amount)
+exports.banking:transfer(player, item, iban, amount)
 ```
 
 - player: `xPlayer`
@@ -128,7 +139,7 @@ exports.banking.transfer(player, item, iban, amount)
 Resends the player's bank card.
 
 ```lua
-exports.banking.resendCard(player, iban, identifier)
+exports.banking:resendCard(player, iban, identifier)
 ```
 
 - player: `xPlayer`
